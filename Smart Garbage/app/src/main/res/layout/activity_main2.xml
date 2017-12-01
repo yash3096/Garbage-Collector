@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="@drawable/background"
+    tools:context="smart.android.example.com.smartgarbage.Main2Activity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2E7D32"
+        android:drawablePadding="16dp"
+        android:drawableTint="@android:color/white"
+        android:hint="NAME"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/et_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="FLAT NO/BLDG NAME"
+        android:padding="10dp"
+        android:lines="3"
+        android:maxLines="3"
+        android:background="#2E7D32"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/et_address"
+
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="#2E7D32"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/spn_locality" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="PINCODE"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="#2E7D32"
+        android:padding="10dp"
+        android:id="@+id/et_pincode"
+        />
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="CITY"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="#2E7D32"
+        android:padding="10dp"
+        /> -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="CONTACT NO"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="#2E7D32"
+        android:padding="10dp"
+        android:id="@+id/et_contact"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type of waste"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLASTIC"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/chk_plastic"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAPER"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/chk_paper"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="METAL"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/chk_metal"/>
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"
+        android:hint="Approx Quantity (in kgs) "
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:background="#2E7D32"
+        android:padding="10dp"
+        android:id="@+id/et_quantity"
+        />
+
+
+    <Button
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST"
+        android:layout_gravity="center"
+        android:background="#212121"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:onClick="onSubmit"
+
+        />
+
+
+
+</LinearLayout>

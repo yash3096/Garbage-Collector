@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/ic_smile"
+        android:id="@+id/imageView"
+        android:drawableTint="@android:color/white"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THANK YOU!"
+        android:textSize="45dp"
+        />
+
+    <TextView
+        android:text="Your Secret Code is:"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+         />
+
+    <TextView
+        android:text="8496"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_code"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:text="(please note the secret no. or take the screen shot)"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="POST AGAIN"
+        android:textSize="25dp"
+        android:onClick="onPostAgain"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:background="@drawable/round_button"/>
+
+</LinearLayout>
